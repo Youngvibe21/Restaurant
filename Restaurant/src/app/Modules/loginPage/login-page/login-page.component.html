@@ -1,1 +1,17 @@
+<h1>Login to your Account</h1>
+<form [formGroup]="loginPayload" (ngSubmit)="onClickSubmit(loginPayload)">
+
+  <label>
+    Email ID: 
+    <input type="email" name="Email" formControlName="email">
+  </label><br><br>
+  <label>
+    Password: 
+    <input type="password" name="Password" formControlName="password">
+  </label>
+  <br><br>
+  <button type="submit">Login </button> Don’t have an account <a routerLink="/signUp">Sign In</a><br><br>
+  Forget Password <a routerLink="/forget">Click here</a>
+
+</form>
 <p>login-page works!</p>

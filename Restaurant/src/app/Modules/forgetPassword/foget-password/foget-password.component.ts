@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-foget-password',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FogetPasswordComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private router: Router, fb: FormBuilder) { }
+  resetPass = new FormGroup({
+    email: new FormControl('')
+  });
+  onClickSubmit(data: FormGroup){
+    console.log("Email",data.value.email);
+    this.router.navigate(['/newPass']);
+  }
+  
   ngOnInit(): void {
   }
 

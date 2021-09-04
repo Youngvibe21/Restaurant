@@ -1,1 +1,19 @@
+<h1>Login to your Restaurant</h1>
+<form [formGroup]="loginRestPayload" (ngSubmit)="onClickSubmit(loginRestPayload)">
+  <label>
+        Restaurant Name: 
+        <input type="restaurant" name="Restaurant" formControlName="restaurant">
+  </label><br><br>
+  <label>
+    Email ID: 
+    <input type="email" name="Email" formControlName="email">
+  </label><br><br>
+  <label>
+    Password: 
+    <input type="password" name="Password" formControlName="password">
+  </label>
+  <br><br>
+  <button type="submit">Login </button> 
+
+</form>
 <p>admin-login works!</p>
