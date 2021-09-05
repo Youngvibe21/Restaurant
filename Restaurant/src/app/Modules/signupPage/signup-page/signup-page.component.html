@@ -1,33 +1,69 @@
-<h1>Register your Account</h1>
-<form [formGroup]="signUpPayload" (ngSubmit)="onClickSubmit(signUpPayload)">
-    
-  <label>
-    User Name: 
-    <input type="text" name="Email" formControlName="userNmae">
-  </label><br><br>
-  <label>
-    Email ID: 
-    <input type="email" name="Email" formControlName="email">
-  </label><br><br>
-  <label>
-    Phone No: 
-    <input type="tel" name="Phone " formControlName="phone">
-  </label><br><br>
-  <label>
-    Password: 
-    <input type="password" name="Password" formControlName="password">
-  </label><br><br>
-  <label>
-    Confirm Password: 
-    <input type="password" name="Password" formControlName="cnfPassword">
-  </label><br><br>
-  <label>
-    <input type="checkbox" name="Accept Terms and condition" formControlName="acceptTerms"  />
-    I agree on terms and condition by sushmita authorized by kgs
-  </label>
-  <br><br>
-  <button type="submit">Register </button>
-
-</form>
-
-<p>signup-page works!</p>
+<div class="form-style">
+  <h1>Register your Account</h1>
+  <form [formGroup]="signUpPayload" (ngSubmit)="onClickSubmit(signUpPayload)">
+    <label>
+      First Name:
+      <input
+        type="text"
+        name="Email"
+        placeholder="First Name"
+        formControlName="userNmae"
+      /> </label
+    ><br /><br />
+    <label>
+      Last Name:
+      <input
+        type="text"
+        name="Email"
+        placeholder="Last Name"
+        formControlName="userNmae"
+      /> </label
+    ><br /><br />
+    <label>
+      Email ID:
+      <input
+        type="email"
+        name="Email"
+        placeholder="Email"
+        formControlName="email"
+      /> </label
+    ><br /><br />
+    <label>
+      Phone No.:
+      <input
+        type="tel"
+        name="Phone "
+        placeholder="Phone No."
+        formControlName="phone"
+      /> </label
+    ><br /><br />
+    <label>
+      Password:
+      <input
+        type="password"
+        name="Password"
+        placeholder="Password"
+        formControlName="password"
+      /> </label
+    ><br /><br />
+    <label>
+      Confirm Password:
+      <input
+        type="password"
+        name="Password"
+        placeholder="Password"
+        formControlName="cnfPassword"
+      /> </label
+    ><br /><br />
+    <label>
+      <input
+        type="checkbox"
+        name="Accept Terms and condition"
+        formControlName="acceptTerms"
+      />
+      I agree on terms and condition by sushmita authorized by kgs
+    </label>
+    <br /><br />
+    <button type="submit">Register</button>
+  </form>
+</div>
