@@ -1,31 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 .home-style {
   width: 100%;
   height: 800px;
+  margin: 0px;
+  padding: 0px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   background: url("../../../../assets/images/signup/sign.jpg");
+  background-size: 100%;
+  background-position-y: center;
+  background-position-y: 100%;
+}
+nav {
+  padding-top: 30px;
+  padding-left: 30px;
+  color: red;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
 }
 .line-one {
   font-size: 100px;
+  text-shadow: 2px 10px black;
+  font-style: italic;
 }
 .line-two {
-  font-size: 80px;
+  font-size: 60px;
+  text-shadow: 2px 10px black;
 }
 p {
   color: #faf8f8;
+  font-size: 30px;
   padding-left: 10px;
-  padding-bottom: 50px;
-  font-size: x-large;
+  padding-bottom: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
 
-.home-style button {
+.button-style button {
   cursor: pointer;
-  color: #f7f8f8;
-  background-color: #444941;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
   border: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 700px;
   font-size: large;
+}
+.home-style .settingbtn {
+  cursor: pointer;
+  font-weight: bold;
+  color: #eb0c0c;
+  background-color: white;
+  border-radius: 10px;
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 1200px;
+  font-size: large;
+}
+
+.footer {
+  background: rgb(251, 252, 252);
+}
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .box-container .box {
+  flex: 1 1 15rem;
+  margin: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  color: red;
+  padding: 1rem 0;
+}
+.footer .box-container .box p {
+  font-size: 1rem;
+  color: black;
+  padding: 0.5rem 0;
+}
+.footer .box-container .box a {
+  font-size: 1rem;
+  color: black;
+  padding: 1rem 0;
+  display: block;
 }
