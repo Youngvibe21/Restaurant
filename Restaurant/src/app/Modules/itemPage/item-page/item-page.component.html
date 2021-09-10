@@ -1,3 +1,10 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+  crossorigin="anonymous"
+/>
+
 <div class="login-style">
   <nav class="navbar">
     <div>
@@ -13,97 +20,130 @@
       <button class="myProfilebtn" type="submit">My Profile</button>
     </div>
   </nav>
+  <!-- Items Card -->
+  <div class="container">
+    <div class="row">
+      <div class="card" style="width: 25rem">
+        <img
+          class="noodles"
+          src="../../../../assets/images/items/Noodle.jpg"
+          alt="Noodles"
+          style="height: auto; width: 200px"
+        />
+        <h4><b>Noodles</b></h4>
+        <p>Price:</p>
+        <p>Rating</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
+        <br />
+        <br />
+      </div>
 
-  <div class="card">
-    <div class="container1">
-      <img
-        class="noodles"
-        src="../../../../assets/images/items/Noodle.jpg"
-        alt="Noodles"
-        style="height: auto; width: 200px"
-      />
-      <h4><b>Noodles</b></h4>
-      <p>Price:</p>
-      <p>Rating</p>
-      <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
-      <br />
-      <br />
-    </div>
-    <div class="container2">
-      <img
-        class="pizza"
-        src="../../../../assets/images/items/pizza.jpg"
-        alt="Noodles"
-        style="height: auto; width: 200px"
-      />
-      <h4><b>Pizza</b></h4>
-      <p>Price:</p>
-      <p>Rating</p>
-      <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
-      <br />
-      <br />
-    </div>
-    <div class="container3">
-      <img
-        class="pizza"
-        src="../../../../assets/images/items/Chicken.jpg"
-        alt="Noodles"
-        style="height: auto; width: 200px"
-      />
-      <h4><b>Chicken Pakora</b></h4>
-      <p>Price:</p>
-      <p>Rating</p>
-      <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
-      <br />
-      <br />
-    </div>
-    <div class="container4">
-      <img
-        class="pizza"
-        src="../../../../assets/images/items/Biryani.png"
-        alt="Noodles"
-        style="height: auto; width: 200px"
-      />
-      <h4><b>Biryani</b></h4>
-      <p>Price:</p>
-      <p>Rating</p>
-      <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
-      <br />
-      <br />
-    </div>
-    <div class="container5">
-      <img
-        class="pizza"
-        src="../../../../assets/images/items/Salad.webp"
-        alt="Noodles"
-        style="height: auto; width: 200px"
-      />
-      <h4><b>Salad</b></h4>
-      <p>Price:</p>
-      <p>Rating</p>
-      <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
-      <br />
-      <br />
-    </div>
-    <div class="container6">
-      <img
-        class="pizza"
-        src="../../../../assets/images/items/Juice.jpg"
-        alt="Noodles"
-        style="height: auto; width: 200px"
-      />
-      <h4><b>Juice</b></h4>
-      <p>Price:</p>
-      <p>Rating</p>
-      <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
-      <br />
-      <br />
+      <div class="card" style="width: 25rem">
+        <img
+          class="pizza"
+          src="../../../../assets/images/items/pizza.jpg"
+          alt="Noodles"
+          style="height: auto; width: 200px"
+        />
+        <h4><b>Pizza</b></h4>
+        <p>Price:</p>
+        <p>Rating</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
+        <br />
+        <br />
+      </div>
+
+      <div class="card" style="width: 25rem">
+        <img
+          class="pizza"
+          src="../../../../assets/images/items/Chicken.jpg"
+          alt="Noodles"
+          style="height: auto; width: 200px"
+        />
+        <h4><b>Chicken Pakora</b></h4>
+        <p>Price:</p>
+        <p>Rating</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
+        <br />
+        <br />
+      </div>
+
+      <div class="card" style="width: 25rem">
+        <img
+          class="pizza"
+          src="../../../../assets/images/items/Biryani.png"
+          alt="Noodles"
+          style="height: auto; width: 200px"
+        />
+        <h4><b>Biryani</b></h4>
+        <p>Price:</p>
+        <p>Rating</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
+        <br />
+        <br />
+      </div>
+
+      <div class="card" style="width: 25rem">
+        <img
+          class="pizza"
+          src="../../../../assets/images/items/Salad.webp"
+          alt="Noodles"
+          style="height: auto; width: 200px"
+        />
+        <h4><b>Salad</b></h4>
+        <p>Price:</p>
+        <p>Rating</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
+        <br />
+        <br />
+      </div>
+
+      <div class="card" style="width: 25rem">
+        <img
+          class="pizza"
+          src="../../../../assets/images/items/Juice.jpg"
+          alt="Noodles"
+          style="height: auto; width: 200px"
+        />
+        <h4><b>Juice</b></h4>
+        <p>Price:</p>
+        <p>Rating</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <button class="addbtn" routerLink="/checkout" type="submit">ADD</button>
+        <br />
+        <br />
+      </div>
     </div>
   </div>
+
+  <!-- Checkout Button -->
   <div>
     <br /><br />
     <button class="checkoutbtn" routerLink="/checkout" type="submit">
-      Checkout
+      CHECKOUT BAG
     </button>
   </div>
 </div>

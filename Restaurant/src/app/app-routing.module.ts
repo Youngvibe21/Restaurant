@@ -49,6 +49,9 @@ const routes: Routes = [
   {
     path: 'checkout', component: CheckoutPageComponent
   },
+  {
+    path: 'cardpayment', component: CardPaymentComponent
+  },
   
   
   {

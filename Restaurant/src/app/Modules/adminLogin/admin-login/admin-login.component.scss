@@ -1,0 +1,31 @@
+.adminlogin-style {
+  max-width: 40%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-image: url("../../../../assets/images/login/login.jpg");
+  margin-left: 30%;
+}
+.adminlogin-style h1 {
+  color: #fcfdfc;
+  padding-left: 10px;
+  text-align: center;
+}
+.adminlogin-style label {
+  display: block;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  color: #f6fcf9;
+}
+.adminlogin-style button {
+  cursor: pointer;
+  color: #fdfdfd;
+  font-size: large;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 10px;
+  border: 0px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 10px;
+}

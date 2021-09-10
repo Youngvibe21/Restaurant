@@ -1,69 +1,82 @@
-<div class="form-style">
-  <h1>Register your Account</h1>
-  <form [formGroup]="signUpPayload" (ngSubmit)="onClickSubmit(signUpPayload)">
-    <label>
-      First Name:
-      <input
-        type="text"
-        name="Email"
-        placeholder="First Name"
-        formControlName="userNmae"
-      /> </label
-    ><br /><br />
-    <label>
-      Last Name:
-      <input
-        type="text"
-        name="Email"
-        placeholder="Last Name"
-        formControlName="userNmae"
-      /> </label
-    ><br /><br />
-    <label>
-      Email ID:
-      <input
-        type="email"
-        name="Email"
-        placeholder="Email"
-        formControlName="email"
-      /> </label
-    ><br /><br />
-    <label>
-      Phone No.:
-      <input
-        type="tel"
-        name="Phone "
-        placeholder="Phone No."
-        formControlName="phone"
-      /> </label
-    ><br /><br />
-    <label>
-      Password:
-      <input
-        type="password"
-        name="Password"
-        placeholder="Password"
-        formControlName="password"
-      /> </label
-    ><br /><br />
-    <label>
-      Confirm Password:
-      <input
-        type="password"
-        name="Password"
-        placeholder="Password"
-        formControlName="cnfPassword"
-      /> </label
-    ><br /><br />
-    <label>
-      <input
-        type="checkbox"
-        name="Accept Terms and condition"
-        formControlName="acceptTerms"
-      />
-      I agree on terms and condition by sushmita authorized by kgs
-    </label>
-    <br /><br />
-    <button type="submit">Register</button>
-  </form>
+<div class="bgs">
+  <div class="form-style">
+    <h1>Register Here</h1>
+
+    <!-- Sign Up Form -->
+    <form [formGroup]="signUpPayload" (ngSubmit)="onClickSubmit(signUpPayload)">
+      <label>
+        First Name:
+        <input
+          class="text-area"
+          type="text"
+          name="Email"
+          placeholder="Enter your first name"
+          formControlName="userNmae"
+        /> </label
+      ><br /><br />
+      <label>
+        Last Name:
+        <input
+          class="text-area"
+          type="text"
+          name="Email"
+          placeholder="Enter your last name"
+          formControlName="userNmae"
+        /> </label
+      ><br /><br />
+      <label>
+        Email:
+        <input
+          class="text-area"
+          type="email"
+          name="Email"
+          placeholder="Enter your email"
+          formControlName="email"
+        /> </label
+      ><br /><br />
+      <label>
+        Phone No.:
+        <input
+          class="text-area"
+          type="tel"
+          name="Phone "
+          placeholder="Enter your phone no."
+          formControlName="phone"
+        /> </label
+      ><br /><br />
+      <label>
+        Password:
+        <input
+          class="text-area"
+          type="password"
+          name="Password"
+          placeholder="Enter your password"
+          formControlName="password"
+        /> </label
+      ><br /><br />
+      <label>
+        Confirm Password:
+        <input
+          class="text-area"
+          type="password"
+          name="Password"
+          placeholder="Confirm your password"
+          formControlName="cnfPassword"
+        /> </label
+      ><br /><br />
+      <label>
+        <input
+          class="text-area"
+          type="checkbox"
+          name="Accept Terms and condition"
+          formControlName="acceptTerms"
+        />
+        I agree on terms and conditions.
+      </label>
+      <br /><br />
+
+      <!-- Register Button -->
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>
 </div>
