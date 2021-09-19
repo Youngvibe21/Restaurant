@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import {LoginService} from './login.service'
 
 @Component({
   selector: 'app-login-page',
@@ -8,15 +9,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-
-  constructor( private router: Router, fb: FormBuilder) { }
+  userId: any;
+  constructor( private router: Router,private loginService: LoginService, fb: FormBuilder) { }
   loginPayload = new FormGroup({
     email: new FormControl(''),
     password: new FormControl(''),
   });
   onClickSubmit(data: FormGroup){
     console.log("details",data.value);
-    this.router.navigate(['/itemPage']);
+    let res = this.loginService.authenticateUser(data.value);
+    if(res){
+      this.userId = res;
+      this.router.navigate(['/itemPage']);
+    }else{
+      this.showLoginFailed();
+    }
+  }
+  showLoginFailed(){
+    alert("Invalid UserName or Password");
   }
   ngOnInit(): void {
   }

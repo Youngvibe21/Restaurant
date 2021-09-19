@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient, HttpClientModule} from '@angular/common/http'
+import {ItemService} from './item.service'
 
 @Component({
   selector: 'app-item-page',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-page.component.scss']
 })
 export class ItemPageComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private http: HttpClient, private itemService: ItemService) { }
+  data:any;
   ngOnInit(): void {
+    let res = this.itemService.getItems({});  
+    if(res){
+      this.data = res;
+    }else{
+      alert("Error during fetching Item Details!");
+    }
+
   }
 
 }

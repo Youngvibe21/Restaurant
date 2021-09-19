@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 // import { HomeComponent } from './modules/home/home/home.component';
 import { HomeComponent } from './Modules/home/home/home.component';
@@ -21,6 +22,7 @@ import { AdminLoginComponent } from './Modules/adminLogin/admin-login/admin-logi
 import { FogetPasswordComponent } from './Modules/forgetPassword/foget-password/foget-password.component';
 import { NewPasswordComponent } from './Modules/newPassword/new-password/new-password.component';
 import { SignupPageComponent } from './Modules/signupPage/signup-page/signup-page.component';
+import { AdminAddNewItemComponent } from './Modules/admin-add-new-item/admin-add-new-item.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +40,14 @@ import { SignupPageComponent } from './Modules/signupPage/signup-page/signup-pag
     //ForgetPasswordComponent,
     FogetPasswordComponent,
     NewPasswordComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    AdminAddNewItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
