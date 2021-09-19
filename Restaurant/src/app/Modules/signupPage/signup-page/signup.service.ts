@@ -10,7 +10,7 @@ export class SignupService {
   authenticateAndAddUser(obj:any){
     let url = environment.API_ENDPOINT + "/getUserDetail";
     var data;
-    this.http.post(url, obj).subscribe((res)=>{
+    this.http.post(url, obj).subscribe((res:any)=>{
       if(res.message == "No record found"){
         data = this.addUser(obj);
       }else{
@@ -22,7 +22,7 @@ export class SignupService {
 
   addUser(obj:any){
     let url = environment.API_ENDPOINT + "/addUserDetail";
-    this.http.post(url, obj).subscribe((res)=>{
+    this.http.post(url, obj).subscribe((res:any)=>{
       if(res.message = "Registration succesfull"){
         return res.message;
       }else{

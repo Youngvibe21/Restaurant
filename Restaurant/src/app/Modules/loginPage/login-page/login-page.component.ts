@@ -15,17 +15,24 @@ export class LoginPageComponent implements OnInit {
     email: new FormControl(''),
     password: new FormControl(''),
   });
-  onClickSubmit(data: FormGroup){
+  async onClickSubmit(data: FormGroup){
     console.log("details",data.value);
-    let res = this.loginService.authenticateUser(data.value);
-    if(res){
+    this.loginService.authenticateUser(data.value);
+    //await this.showLoginFailed(res);
+  }
+  showResponse(res:any){
+    if(res==false || res==undefined){
+      console.warn("After eric")
+      //this.showLoginFailed();
+    }else{
       this.userId = res;
       this.router.navigate(['/itemPage']);
-    }else{
-      this.showLoginFailed();
+      
     }
   }
-  showLoginFailed(){
+  showLoginFailed(res:any){
+    console.warn("Before eric ",res);
+
     alert("Invalid UserName or Password");
   }
   ngOnInit(): void {

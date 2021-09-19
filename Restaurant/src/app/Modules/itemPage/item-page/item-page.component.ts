@@ -12,7 +12,7 @@ export class ItemPageComponent implements OnInit {
   data:any;
   ngOnInit(): void {
     let res = this.itemService.getItems({});  
-    if(res){
+    if(res!=false){
       this.data = res;
     }else{
       alert("Error during fetching Item Details!");

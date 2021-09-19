@@ -11,7 +11,7 @@ export class ForgetService {
   getResetLink(obj:any){
       let url = environment.API_ENDPOINT + "/getUserDetail";
       var data;
-      this.http.post(url, obj).subscribe((res)=>{
+      this.http.post(url, obj).subscribe((res:any)=>{
         if(res.message == "No record found"){
           data = "User Not Exist!";
         }else{
@@ -29,7 +29,7 @@ export class ForgetService {
   sendLink(obj:any){
     var result;
     let url = environment.API_ENDPOINT + "/getResetLink";
-    this.http.post(url, obj).subscribe((res)=>{
+    this.http.post(url, obj).subscribe((res:any)=>{
       result = res.data.sent;
     });
     return result;

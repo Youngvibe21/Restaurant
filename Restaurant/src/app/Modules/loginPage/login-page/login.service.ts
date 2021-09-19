@@ -11,11 +11,14 @@ export class LoginService {
   authenticateUser(obj:any){
     let url = environment.API_ENDPOINT + "/getUserDetail";
     var data;
-    this.http.post(url, obj).subscribe((res)=>{
+    
+    this.http.post(url, obj).subscribe((res:any)=>{
       if(res.message == "No record found"){
+        console.warn("In ")
         data = false;
       }else{
-        data = res.data._id;
+        data = res.data.id;
+        console.warn("data ",data)
       }
     });
     return data;
