@@ -17,13 +17,15 @@ export class AdminLoginComponent implements OnInit {
   });
   onClickSubmit(data: FormGroup){
     console.log("details",data.value);
-    let result = this.loginService.authenticateAdmin(data.value);
-    if(result){
-      this.adminId = result;
-      this.router.navigate(['/adminItem']);
-    }else{
-      alert("Authentication failed !");
-    }
+    let result = this.loginService.authenticateAdmin(data.value).subscribe((response)=>{
+      console.log("Response Admin login ",response)
+    });
+    // if(result){
+    //   this.adminId = result;
+    //   this.router.navigate(['/adminItem']);
+    // }else{
+    //   alert("Authentication failed !");
+    // }
   }
   ngOnInit(): void {
   }

@@ -1,4 +1,4 @@
-<link
+<!-- <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
   rel="stylesheet"
   integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
@@ -20,8 +20,8 @@
       <button class="myProfilebtn" type="submit">My Profile</button>
     </div>
   </nav>
-  <!-- Items Card -->
-  <div class="container">
+   < Items Card -->
+  <!-- <div class="container">
     <div class="row">
       <div class="card" style="width: 25rem">
         <img
@@ -139,11 +139,84 @@
     </div>
   </div>
 
-  <!-- Checkout Button -->
-  <div>
+  Checkout Button -->
+  <!-- <div>
     <br /><br />
     <button class="checkoutbtn" routerLink="/checkout" type="submit">
       CHECKOUT BAG
     </button>
   </div>
+</div> --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+  crossorigin="anonymous"
+/>
+<div class="outerContainer">
+    <div class="login-style">
+        <nav class="navbar">
+            <div>
+              Restro 
+              <input
+                class="from-search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="searchbtn" type="submit">Search</button>
+              <button class="filterbtn" type="submit">Filter</button>
+            </div>
+          </nav>
+        <div class="container">
+            <ng-container *ngFor = "let item of items">
+                <div class="card" style="width: 25rem">
+                    <img
+                      class="noodles"
+                      src="../../../../assets/images/items/Noodle.jpg"
+                      alt="Noodles"
+                      style="height: auto; width: 200px"
+                    />
+                    <div>Item No: {{item.no}}</div>
+                    <div>Item Name: {{item.name}}</div>
+                    <div>Item Cost: {{item.Cost}}</div>
+                    <div>Item Quantity: {{item.quantity}}</div>
+                    <div >
+                        <button class="incdecbtn" (click)="decrement(item._id)">-</button>  _{{getQuant(item._id)}}_<button class="incdecbtn" (click)="increment(item._id)">+</button>
+                    </div>
+                    Veg/NonVeg
+                    <button id="{{item._id}}" class="addbtn" (click)="submitItem(item._id)" type="submit">ADD</button>
+                    <br />
+                    <br />
+                  </div>
+            </ng-container>
+        </div>
+        <div>
+            <br /><br />
+            <button class="checkoutbtn" (click)="submit()" type="submit">
+              CHECKOUT BAG
+            </button>
+          </div>
+    </div>
+    
 </div>
+
+

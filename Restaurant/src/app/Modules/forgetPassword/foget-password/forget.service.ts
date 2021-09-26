@@ -11,27 +11,12 @@ export class ForgetService {
   getResetLink(obj:any){
       let url = environment.API_ENDPOINT + "/getUserDetail";
       var data;
-      this.http.post(url, obj).subscribe((res:any)=>{
-        if(res.message == "No record found"){
-          data = "User Not Exist!";
-        }else{
-          data = this.sendLink(obj);
-          if(data){
-            data = "Link sent to your registerd mail "
-          }else{
-            data = "Technical Error !"
-          }
-        }
-      });
-      return data;
+      return this.http.post(url, obj);
   }
 
   sendLink(obj:any){
     var result;
     let url = environment.API_ENDPOINT + "/getResetLink";
-    this.http.post(url, obj).subscribe((res:any)=>{
-      result = res.data.sent;
-    });
-    return result;
+    return this.http.post(url, obj);
   }
 }

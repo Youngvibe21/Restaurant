@@ -1,4 +1,4 @@
-<div class="check-style">
+<!-- <div class="check-style">
   <div>
     <p>Item1</p>
     <img
@@ -40,16 +40,44 @@
     <br /><br />
     <button class="couponbtn" type="submit">Coupon</button>
   </div>
+</div> -->
+<div class="outerContainer">
+  <div class="login-style">
+
+<nav class="navbar">
+  <div>
+    Restro 
+  </div>
+</nav>
+<div class="container">
+  <ng-container *ngFor = "let item of data">
+      <div class="card" style="width: 25rem">
+          <img
+            class="noodles"
+            src="../../../../assets/images/items/Noodle.jpg"
+            alt="Noodles"
+            style="height: auto; width: 200px"
+          />
+          <div>Item No: {{item.no}}</div>
+          <div>Item Name: {{item.name}}</div>
+          <div>Item Cost: {{item.cost}}</div>
+          <div>Item count: {{item.count}}</div>
+          Veg/NonVeg
+          <br />
+        </div>
+  </ng-container>
 </div>
 <div class="order-style">
   <h2>Order Summary</h2>
-  <p>Total MRP:</p>
-  <p>Discount on MRP:</p>
-  <p>Coupon Discount:</p>
-  <h3>Total Amount:</h3>
+  <p>Total MRP: {{totalMrp}}</p>
+  <p>Discount on MRP:{{discountPer}}% of {{totalMrp}} = {{discountAmt}}</p>
+  <p>Coupon Discount: {{couponDiscount}}</p>
+  <h3>Total Amount: {{amount}}</h3>
   <br />
   <br />
-  <button class="paybtn" routerLink="/payment" type="submit">
+  <button type="submit">
     PLACE ORDER
   </button>
+</div>
+</div>
 </div>

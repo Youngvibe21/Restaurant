@@ -11,10 +11,7 @@ export class AdminAddNewItemService {
 
   addNewItem(obj:any){
     let url = environment.API_ENDPOINT + "/addInventory";
-    return this.http.post(url, obj).subscribe((res)=>{
-      console.warn(res);
-      return res;
-    })
+    return this.http.post(url, obj);
   }
 
 }

@@ -11,15 +11,6 @@ export class ItemService {
   getItems(obj:any){
     var data;
     let url= environment.API_ENDPOINT + "/getItems";
-    this.http.post(url, obj).subscribe((res:any)=>{
-      console.warn(res);
-      if(res.data){
-        data = res.data;
-      }else{
-        res = false;
-      }
-      
-    }); 
-    return data;
+    return this.http.post(url, obj);
   }
 }

@@ -11,7 +11,7 @@
           type="text"
           name="Email"
           placeholder="Enter your first name"
-          formControlName="userNmae"
+          formControlName="userFirstName"
         /> </label
       ><br /><br />
       <label>
@@ -21,7 +21,7 @@
           type="text"
           name="Email"
           placeholder="Enter your last name"
-          formControlName="userNmae"
+          formControlName="userLastName"
         /> </label
       ><br /><br />
       <label>
@@ -77,6 +77,7 @@
 
       <!-- Register Button -->
       <button type="submit">REGISTER</button>
+      <div id="showErr" *ngIf="showErr" style="color: red;">please Enter all details before Registration!</div>
     </form>
   </div>
 </div>

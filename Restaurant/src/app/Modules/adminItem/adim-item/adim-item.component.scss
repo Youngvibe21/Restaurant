@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.home-style {
+  width: 100%;
+  height: 800px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+nav {
+  padding-top: 30px;
+  padding-left: 30px;
+  color: red;
+  font-size: medium;
+}
+
+p {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.login-style button {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 500px;
+  font-size: large;
+}
+.from-search {
+  margin-left: 1100px;
+}
+.login-style .searchbtn {
+  margin-left: 1200px;
+}
+.login-style .filterbtn {
+  margin-left: 1200px;
+}
+.login-style .myProfilebtn {
+  margin-left: 1200px;
+}
+.login-style .addbtn {
+  margin-left: 100px;
+}
+.login-style
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: red;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px red;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.checkoutbtn {
+  width: 40%;
+}
