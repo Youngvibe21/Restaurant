@@ -34,5 +34,9 @@ export class CheckoutPageComponent implements OnInit {
     this.couponDiscount = 10;
     this.amount = this.totalMrp - (this.discountAmt + this.couponDiscount);
   }
+  submit(){
+    console.log(this.amount);
+      this.router.navigate(['/cardpayment'], { state: { payload: this.amount } })
+  }
 
 }

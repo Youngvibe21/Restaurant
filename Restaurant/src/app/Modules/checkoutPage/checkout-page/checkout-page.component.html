@@ -70,12 +70,12 @@
 <div class="order-style">
   <h2>Order Summary</h2>
   <p>Total MRP: {{totalMrp}}</p>
-  <p>Discount on MRP:{{discountPer}}% of {{totalMrp}} = {{discountAmt}}</p>
+  <p>Discount on MRP: {{discountPer}}% of {{totalMrp}} = {{discountAmt}}</p>
   <p>Coupon Discount: {{couponDiscount}}</p>
   <h3>Total Amount: {{amount}}</h3>
   <br />
   <br />
-  <button type="submit">
+  <button type="submit" (click)="submit()">
     PLACE ORDER
   </button>
 </div>
